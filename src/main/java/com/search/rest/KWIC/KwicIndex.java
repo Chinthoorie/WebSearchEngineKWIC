@@ -46,6 +46,7 @@ public class KwicIndex {
         }
 
         System.out.println("######################################################################");
+        System.out.println();
 
         return outputList;
     }
