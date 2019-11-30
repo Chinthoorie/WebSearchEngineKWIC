@@ -20,14 +20,20 @@ public class KwicIndex {
 
         List<ArrayList<String>> outputList = new ArrayList();
 
+        // Circular Shift
+
         csArray = cs.circular(inputArray);
         ArrayList<String> csList = new ArrayList<>();
         outputList.add(csList);
         System.out.println("########################## CS array ############################################");
         for ( int i = 0; i < csArray.size(); i++ ) {
             csList.add(csArray.get(i));
-            System.out.println(csArray.get(i));
+//            System.out.println();
+//            System.out.println(csArray.get(i));
         }
+        System.out.println(csArray.size());
+
+        // noise removal
 
         noiseArray = cs.noiseRemove(csArray);
         ArrayList<String> noiseList = new ArrayList<>();
@@ -35,14 +41,17 @@ public class KwicIndex {
         System.out.println("########################## noise remove array ############################################");
         for ( int i = 0; i < noiseArray.size(); i++ ) {
             noiseList.add(noiseArray.get(i));
-            System.out.println(noiseArray.get(i));
+//            System.out.println(noiseArray.get(i));
         }
+
+        // alphabetize
 
         outputArray = alpha.order(noiseArray);
         outputList.add(outputArray);
         System.out.println("########################## sorted array ############################################");
         for ( int i = 0; i < outputArray.size(); i++ ) {
             System.out.println(outputArray.get(i));
+            System.out.println("******");
         }
 
         System.out.println("######################################################################");

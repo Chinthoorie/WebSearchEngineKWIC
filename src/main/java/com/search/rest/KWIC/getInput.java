@@ -11,7 +11,7 @@ public class getInput {
 		this.input = inputFromUI.trim().toLowerCase().replaceAll(" +", " ");;
 		ArrayList<String> sentenceList = new ArrayList<String>();
 
-		sentenceList.addAll(Arrays.asList(input.split(",")));
+		sentenceList.addAll(Arrays.asList(input.split("\\|")));
 	    
 		return sentenceList;
 	}

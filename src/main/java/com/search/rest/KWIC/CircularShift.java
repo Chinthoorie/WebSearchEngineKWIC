@@ -33,14 +33,46 @@ public class CircularShift {
 	
 	public ArrayList<String> noiseRemove(ArrayList<String> circular) {
 		HashSet<String> hs = new HashSet<String>();
-		hs.add("and");
 		hs.add("of");
+		hs.add("and");
 		hs.add("the");
 		hs.add("is");
 		hs.add("a");
 		hs.add("an");
 		hs.add("are");
-		
+		hs.add("in");
+		hs.add("on");
+		hs.add("as");
+		hs.add("or");
+		hs.add("to");
+		hs.add("was");
+		hs.add("it");
+		hs.add("from");
+		hs.add("with");
+		hs.add("thus");
+		hs.add("can");
+		hs.add("each");
+		hs.add("before");
+		hs.add("between");
+		hs.add("within");
+		hs.add("at");
+		hs.add("be");
+		hs.add("into");
+		hs.add("has");
+		hs.add("for");
+		hs.add("such");
+		hs.add("by");
+		hs.add("means");
+		hs.add("both");
+		hs.add("any");
+		hs.add("next");
+		hs.add("one");
+		hs.add("(");
+		hs.add(")");
+		hs.add("-");
+		hs.add(".");
+		hs.add("|");
+
 		for(int i=0;i<circular.size();i++) {
 			String s[] = circular.get(i).split(" ",2);
 			if(hs.contains(s[0]))
